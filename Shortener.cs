@@ -55,7 +55,7 @@ public class Shortener{
             } ;
             Key newKey = new Key(NS, SET, Token);
             // Store the values in the NixURL model
-			var domain ="http://localhost:8080";
+			var domain ="https://localhost:7296";
             Bin bin1 = new Bin(TOKEN, Token);
             Bin bin2 = new Bin(REALURL, url);
             var shortUrl = $"{domain}/{this.Token}";

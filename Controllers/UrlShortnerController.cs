@@ -27,20 +27,13 @@ public class UrlShortnerController : ControllerBase
 
     [HttpPost, Route("/api/shorten")]
     public Response  PostURL([FromBody] PostReq  req) {
-        try{
-            (string token,string shortURL) = _shortner.GetShortUrl(req.Url);
+     
+        (string token,string shortURL) = _shortner.GetShortUrl(req.Url);
         return new Response(){
             ShortUrl = shortURL,
             Token = token
         };    
-        }
-        catch(Exception e)
-        {
-             return new Response(){
-            ShortUrl = e.Message,
-            Token = e.StackTrace
-        };    
-        }
+        
         
         
     }
