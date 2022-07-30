@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace aspdockerapi.Controllers;
+namespace aerospike.Controllers;
 
 [ApiController]
 [Route("[controller]")]

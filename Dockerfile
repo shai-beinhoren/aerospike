@@ -3,14 +3,14 @@ WORKDIR /app
 EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:6.0-focal AS build
 WORKDIR /src
-COPY ["aspdockerapi.csproj", "./"]
-RUN dotnet restore "./aspdockerapi.csproj"
+COPY ["aerospike.csproj", "./"]
+RUN dotnet restore "./aerospike.csproj"
 COPY . .
 WORKDIR "/src/."
-RUN dotnet build "aspdockerapi.csproj" -c Release -o /app/build
+RUN dotnet build "aerospike.csproj" -c Release -o /app/build
 FROM build AS publish
-RUN dotnet publish "aspdockerapi.csproj" -c Release -o /app/publish
+RUN dotnet publish "aerospike.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "aspdockerapi.dll"]
+ENTRYPOINT ["dotnet", "aerospike.dll"]
