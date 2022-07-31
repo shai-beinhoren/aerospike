@@ -1,9 +1,15 @@
 # aerospike
 
-You'll need to install dot net 6. <br />
+The code generates a token for each long url and saves it to the DB. <br />
+The short url is the doamin/{token}.  <br />
+A redirect is made after retrieving the long url from the DB via the token.  <br />
+An elaboration on the token generation Algorythm can be found here:  <br />
+https://www.arctek.dev/blog/make-a-quick-url-shortener  <br />
+
+You'll need to install dot net 6 to run the prject. <br />
 
 
-to excute first clone the repo and run the project: <br />
+to excute, first clone the repo and run the project: <br />
 git clone https://github.com/shai-beinhoren/aerospike.git <br /> <br />
 
 cd aerospike <br />
