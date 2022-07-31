@@ -24,9 +24,6 @@ docker network create aero-net <br />
 docker run -d --net aero-net --name aerospike -p 3000-3002:3000-3002 aerospike/aerospike-server <br />
  docker run -ti --rm --name shorturlservice --net aero-net -p 8080:80 shorturlimage <br />
 
-**Then, upload aerospike server:** <br />
-docker run -d --name aerospike -p 3000-3002:3000-3002 aerospike/aerospike-server <br /> <br />
-
 
 **Open postman and send a POST request to the server with the long url.** <br />
 http://localhost:8080/api/shorten <br />
