@@ -25,3 +25,9 @@ Payload:
 
 ![image](https://user-images.githubusercontent.com/5191999/182014723-5ff24873-eafa-412c-b6ca-3faf7b16e8c2.png) <br /> <br />
 click the url from the response and it should redirect you the page. Make sure to use the right port and protocol, change if needed <br />
+
+
+Improvements can be made.
+1.validation for client and BE. e.g. check the url is valid on client side and check long url doesn't exist already in DB on BE.<br />
+2. Async calls to DB. <br />
+3. extracting data to config, e.g. domain  <br />
