@@ -6,7 +6,7 @@ A redirect is made after retrieving the long url from the DB via the token.  <br
 An elaboration on the token generation Algorythm can be found here:  <br />
 https://www.arctek.dev/blog/make-a-quick-url-shortener  <br />
 
-You'll need to install dot net 6 to run the prject. <br />
+You'll need to install dot net 6 to run the project. <br />
 
 
 to excute, first clone the repo and run the project: <br />
