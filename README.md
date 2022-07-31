@@ -27,7 +27,7 @@ docker run -d --net aero-net --name aerospike -p 3000-3002:3000-3002 aerospike/a
 
 **Open postman and send a POST request to the server with the long url.** <br />
 http://localhost:8080/api/shorten <br />
-Payload:
+
 {
 
     "Url": "https://www.amazon.com/-/he/Bernardo-Kastrup-ebook/dp/B07PGQPV3R/ref=sr_1_3?keywords=bernardo+kastrup&qid=1659251624&s=digital-   text&sprefix=bernardo+k%2Cdigital-text%2C370&sr=1-3"
