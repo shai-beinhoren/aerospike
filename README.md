@@ -1,8 +1,8 @@
 # aerospike
 
 The code generates a token for each long url and saves it to the DB. <br />
-The short url is the doamin/{token}.  <br />
-A redirect is made after retrieving the long url from the DB via the token.  <br />
+The short url is in doamin/{token}.  <br />
+Clicking it sets A redirect to the site after retrieving the long url from the DB via the token.  <br />
 An elaboration on the token generation Algorythm can be found here:  <br />
 https://www.arctek.dev/blog/make-a-quick-url-shortener  <br />
 
