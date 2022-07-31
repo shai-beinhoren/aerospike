@@ -6,16 +6,21 @@ A redirect is made after retrieving the long url from the DB via the token.  <br
 An elaboration on the token generation Algorythm can be found here:  <br />
 https://www.arctek.dev/blog/make-a-quick-url-shortener  <br />
 
-You'll need to install dot net 6 to run the project. <br />
+We'll have 2 containers communicating with via a network. <br />
 
 
-to excute, first clone the repo and run the project: <br />
+To excute, first clone the repo and run the project: <br />
 git clone https://github.com/shai-beinhoren/aerospike.git <br /> 
+Build the image for the service:
+docker build -t shorturlimage -f Dockerfile .
 cd aerospike <br />
-dotnet build <br />
-dotnet run <br />
- 
+create a network:  <br />
+docker network create aero-net <br />
 
+connect the service and aerospike to the network and run it: <br />
+
+docker run -d --net aero-net --name aerospike -p 3000-3002:3000-3002 aerospike/aerospike-server <br />
+ docker run -ti --rm --name shorturlservice --net aero-net -p 8080:80 shorturlimage <br />
 
 Then, upload aerospike server: <br />
 docker run -d --name aerospike -p 3000-3002:3000-3002 aerospike/aerospike-server <br /> <br />
