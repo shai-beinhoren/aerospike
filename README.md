@@ -36,7 +36,8 @@ Payload:
     "Url": "https://www.amazon.com/-/he/Bernardo-Kastrup-ebook/dp/B07PGQPV3R/ref=sr_1_3?keywords=bernardo+kastrup&qid=1659251624&s=digital-   text&sprefix=bernardo+k%2Cdigital-text%2C370&sr=1-3"
 }
 
-![image](https://user-images.githubusercontent.com/5191999/182014723-5ff24873-eafa-412c-b6ca-3faf7b16e8c2.png) <br /> <br />
+![image](https://user-images.githubusercontent.com/5191999/182029338-4b6175a8-5677-4d25-9409-93bbf52bbc05.png)
+ <br /> <br />
 click the url from the response and it should redirect you the page.  <br />
 
 <br />
