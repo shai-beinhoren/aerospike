@@ -1,16 +1,16 @@
 # aerospike
+
+You'll need to install dot net 6. <br />
+
+
 to excute first clone the repo and run the project: <br />
 git clone https://github.com/shai-beinhoren/aerospike.git <br /> <br />
 
-go into aerospike folder <br />
+cd aerospike <br />
 
-for windows: <br />
 dotnet build <br />
 dotnet run <br />
- <br />
- for mac: <br />
- docker build -t aerospike -f Dockerfile . <br />
- docker run -ti --rm -p 8080:80 aerospike <br /> <br />
+ 
 
 
 Then, upload aerospike server: <br />
