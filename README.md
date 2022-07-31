@@ -27,7 +27,7 @@ Payload:
 click the url from the response and it should redirect you the page. Make sure to use the right port and protocol, change if needed <br />
 
 
-Improvements can be made.
+Improvements can be made. <br />
 1.validation for client and BE. e.g. check the url is valid on client side and check long url doesn't exist already in DB on BE.<br />
 2. Async calls to DB. <br />
-3. extracting data to config, e.g. domain  <br />
+3. extracting data to config, e.g. domain etc  <br />
