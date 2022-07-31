@@ -9,7 +9,7 @@ https://www.arctek.dev/blog/make-a-quick-url-shortener  <br />
 We'll have 2 containers communicating  via a network. <br />
 
 
-**To excute, first clone the repo and run the project:** <br />
+**To excute, first clone the service:** <br />
 git clone https://github.com/shai-beinhoren/aerospike.git <br /> 
 
 **Build the image for the service:** <br />
