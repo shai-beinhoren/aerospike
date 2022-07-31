@@ -24,7 +24,7 @@ public class Shortener{
 
     internal string GetUrl(string token)
     {
-        AerospikeClient client = new AerospikeClient("127.0.0.1", 3000);
+        AerospikeClient client = new AerospikeClient("aerospike", 3000);
 
         // Create key
         Key key = new Key(NS, SET, token);
@@ -42,7 +42,7 @@ public class Shortener{
     public (string token, string shortUrl) GetShortUrl(string url) 
         {
 			 // Establish connection the server
-            AerospikeClient client = new AerospikeClient("127.0.0.1", 3000);
+            AerospikeClient client = new AerospikeClient("aerospike", 3000);
           
              //RecordSet rs = client.Query(null, stmt);
 			GenerateToken();
@@ -55,7 +55,7 @@ public class Shortener{
             } ;
             Key newKey = new Key(NS, SET, Token);
             // Store the values in the NixURL model
-			var domain ="https://localhost:7296";
+			var domain ="http://localhost:8080";
             Bin bin1 = new Bin(TOKEN, Token);
             Bin bin2 = new Bin(REALURL, url);
             var shortUrl = $"{domain}/{this.Token}";
