@@ -10,10 +10,8 @@ You'll need to install dot net 6 to run the project. <br />
 
 
 to excute, first clone the repo and run the project: <br />
-git clone https://github.com/shai-beinhoren/aerospike.git <br /> <br />
-
+git clone https://github.com/shai-beinhoren/aerospike.git <br /> <
 cd aerospike <br />
-
 dotnet build <br />
 dotnet run <br />
  
