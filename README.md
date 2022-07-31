@@ -1,15 +1,21 @@
 # aerospike
 to excute first clone the repo and run the project: <br />
-git clone https://github.com/shai-beinhoren/aerospike.git <br />
+git clone https://github.com/shai-beinhoren/aerospike.git <br /> <br />
+
 go into aerospike folder <br />
+
+for windows: <br />
 dotnet build <br />
 dotnet run <br />
  <br />
+ for mac: <br />
+ docker build -t aerospike -f Dockerfile . <br />
+ docker run -ti --rm -p 8080:80 aerospike <br /> <br />
 
 
 Then, upload aerospike server: <br />
 docker run -d --name aerospike -p 3000-3002:3000-3002 aerospike/aerospike-server <br /> <br />
-open postman and send a POST request to the server with the long url: <br />
+open postman and send a POST request to the server with the long url. Make sure to use the right port and protocol: <br />
 https://localhost:7296/COg6q <br />
 Payload:
 {
