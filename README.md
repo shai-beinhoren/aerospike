@@ -6,7 +6,7 @@ A redirect is made after retrieving the long url from the DB via the token.  <br
 An elaboration on the token generation Algorythm can be found here:  <br />
 https://www.arctek.dev/blog/make-a-quick-url-shortener  <br />
 
-We'll have 2 containers communicating with via a network. <br />
+We'll have 2 containers communicating  via a network. <br />
 
 
 To excute, first clone the repo and run the project: <br />
